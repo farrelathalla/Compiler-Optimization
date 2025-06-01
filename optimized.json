@@ -1,0 +1,47 @@
+{
+  "optimized_code": "int factorial(int n) {\n    int result = 1;\n    for (int i = 1; i <= n; i = i + 1) {\n        result = result * i;\n    }\n    return result;\n}\nint compute_sum(int a, int b) {\n    int x = a;\n    int y = b;\n    int z = 0;\n    return x + y + z;\n}\nint optimize_expressions() {\n    int a = 8;\n    int b = a * 2;\n    int c = 0;\n    int d = c + 10;\n    int e = 0;\n    int f = e + 15;\n    return f;\n}\nint main() {\n    int x = 5;\n    int y = factorial(x);\n    int z = compute_sum(10, 20);\n    return y + z;\n}",
+  "metrics": {
+    "original_instructions": 103,
+    "optimized_instructions": 82,
+    "dead_code_eliminated": 2,
+    "constants_folded": 8,
+    "optimization_time": 23.876190185546875,
+    "basic_blocks": 10,
+    "loops_detected": 1,
+    "registers_allocated": 10,
+    "spills_required": 0
+  },
+  "algorithmic_contributions": {
+    "graph_analysis": {
+      "basic_blocks_identified": 10,
+      "loops_detected": 1,
+      "dominance_tree_computed": true,
+      "live_variable_analysis": true
+    },
+    "dynamic_programming": {
+      "variables_allocated": 10,
+      "registers_used": 8,
+      "spills_required": 0,
+      "optimal_allocation": true
+    },
+    "greedy_optimization": {
+      "instructions_scheduled": 103,
+      "priority_based_scheduling": true,
+      "dependency_graph_built": true
+    },
+    "branch_and_bound": {
+      "sequences_explored": 100,
+      "optimal_found": true,
+      "pruning_applied": true
+    },
+    "pattern_matching": {
+      "dead_code_eliminated": 2,
+      "constants_folded": 8,
+      "patterns_applied": 9
+    }
+  },
+  "config": {
+    "num_registers": 8,
+    "optimization_level": 2
+  }
+}
