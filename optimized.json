@@ -5,7 +5,7 @@
     "optimized_instructions": 82,
     "dead_code_eliminated": 2,
     "constants_folded": 8,
-    "optimization_time": 23.876190185546875,
+    "optimization_time": 8.035659790039062,
     "basic_blocks": 10,
     "loops_detected": 1,
     "registers_allocated": 10,
